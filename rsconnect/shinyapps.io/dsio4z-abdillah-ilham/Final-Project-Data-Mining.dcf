@@ -1,0 +1,13 @@
+name: Final-Project-Data-Mining
+title: Final-Project-Data-Mining
+username: dsio4z-abdillah-ilham
+account: dsio4z-abdillah-ilham
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12229669
+bundleId: 8818655
+url: https://dsio4z-abdillah-ilham.shinyapps.io/Final-Project-Data-Mining/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData
