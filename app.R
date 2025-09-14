@@ -179,6 +179,7 @@ df = df %>%
 
 header = dashboardHeader(title = "Menu", titleWidth = 200)
 
+
 sidebar = bs4DashSidebar(vertical=F,
                          width=200,
                          sidebarMenu(
@@ -705,10 +706,10 @@ server <- function(input, output, session){
       no_of_children = as.integer(input$no_of_children),
       no_of_weekend_nights = as.integer(input$no_of_weekend_nights),
       no_of_week_nights = as.integer(input$no_of_week_nights),
-      type_of_meal_plan = factor(input$type_of_meal_plan, levels = levels(train_data$type_of_meal_plan)),
-      room_type_reserved = factor(input$room_type_reserved, levels = levels(train_data$room_type_reserved)),
+      type_of_meal_plan = factor(input$type_of_meal_plan, levels = levels(test_data$type_of_meal_plan)),
+      room_type_reserved = factor(input$room_type_reserved, levels = levels(test_data$room_type_reserved)),
       lead_time = as.integer(as.Date(input$arrival_date) - as.Date(input$booking_date)),
-      market_segment_type = factor(input$market_segment_type, levels = levels(train_data$market_segment_type)),
+      market_segment_type = factor(input$market_segment_type, levels = levels(test_data$market_segment_type)),
       avg_price_per_room = as.numeric(input$avg_price_per_room),
       no_of_special_requests = as.integer(input$no_of_special_requests),
       stringsAsFactors = TRUE
